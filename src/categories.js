@@ -1,13 +1,13 @@
 import React from 'react'
 //import {categor} from './data'
 import './catogories.css'
-import {Link} from 'react-router-dom';
+import {Link,useMatch,useResolvedPath} from "react-router-dom";
 function Categories() {
   return (
     <div>
-    <Link to="/create">
+    <CustomLink to ="/createpost" >
     <button type="button" className="buttn ">New Blog</button>
-    </Link>
+    </CustomLink>
     <table className="table table-hover table-bordered border-secondary">
     <thead>
     <tr>
@@ -36,5 +36,16 @@ function Categories() {
     </div>
   )
 }
-
+function CustomLink({to,children,...props})
+{
+    const resolvedpath=useResolvedPath(to);
+    const isActive=useMatch({path:resolvedpath.pathname,end:true})
+    return(
+        <li className={isActive? "active":""}>
+        <Link to={to} {...props}>
+        {children}
+        </Link>
+        </li>
+    )
+}
 export default Categories
