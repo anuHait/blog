@@ -1,0 +1,36 @@
+.wrap{
+    padding: 25px 35px;
+   display:flex;
+   flex-direction:column;
+    
+}
+.txt{
+    text-align: left;
+}
+.component{
+    width:400px;
+    margin:auto;
+    box-shadow: 5px 5px #888888;
+   border-radius: 25px;
+   margin-top:120px;
+   
+}
+.Signbtn{
+    background-color:purple;height:42px; color:white;
+    width:155px;border-color:purple;
+    margin-top: 10px;border-radius: 4px; margin-bottom: 5px; margin-left: 100px;
+}
+.Accnbtn{
+    color:purple;height:42px; border-color:purple;
+    margin-bottom: 10px;margin-top: 2px;
+    border-radius: 4px;margin-left: 100px;
+
+}
+.inpufield{
+  border-radius: 3px;
+  width:250px;margin-left: 80px;
+  height:42px;border-color:lightgray;
+}
+p{
+    font-size: large;font-weight: 500;
+}

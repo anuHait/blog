@@ -1,0 +1,11 @@
+.buttn{
+    margin:20px;
+    margin-left: 10px;
+    background-color:purple;
+    color:white;
+    width:250px;border-radius: 3px;border-color: purple;
+}
+.table{
+    border-radius: 3px;
+    margin-left: 10px;
+}
